@@ -7,4 +7,4 @@ RUN mkdir /wiki && \
 
 COPY start.sh /
 
-CMD bash run.sh
+CMD bash /run.sh

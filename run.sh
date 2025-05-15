@@ -1,3 +1,4 @@
+cd /
 if [ -Z $(ls -A /wiki) ]; then
     tiddlywiki /wiki --init server
 fi

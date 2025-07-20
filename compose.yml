@@ -1,0 +1,11 @@
+services:
+  wiki:
+    image: ghcr.io/zeauw/tiddlywiki:main
+    environment:
+      - TIDDLYWIKI_USERNAME=username
+      - TIDDLYWIKI_PASSWORD=password
+    restart: always
+    volumes:
+      - ./wiki:/wiki
+    ports:
+      - 8080:8080
